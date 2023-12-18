@@ -6,18 +6,20 @@ body {
     font-family:  "Helvetica Neue", Helvetica, sans-serif;
 }
 main {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-block-start: 5rem;
 }
+
 section {
     background-color: white;
-    width: 30rem;
+    width: 32rem;
     border-radius: 1rem;
     padding: 2rem;
+    box-sizing: border-box;
 }
+
 h1  {
     text-align: center;
     margin-block-start: 1rem;
@@ -28,7 +30,7 @@ h3 {
     text-align: center;
     margin-block-start: 1rem;
     margin-block-end: 2rem;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: gray;
 
 }
@@ -38,30 +40,17 @@ form {
     
 }
 label {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-block-end: 0.5rem;
     color: gray;
 }
-div {
 
-}
-figure {
-    display: flex;
-}
-figure img {
-    width: 16px;
+i {
+    font-size: large;
     margin-inline-start: auto;
     margin-inline-end: auto;
 }
-.input {
-    display: flex;
-    margin-block-end: 2rem;
-    border: 1px solid gray;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    
-    
-}
+
 input {
     outline: none;
     font-size: 2rem;
@@ -80,7 +69,7 @@ button {
     
 }
 p {
-    font-size: 18px;
+    font-size: 1.5rem;
     margin: 2rem 0;
     color: white;
 }
@@ -93,4 +82,19 @@ a {
     text-decoration: none;
     color: #ff7f50;
 }
+.input {
+    display: flex;
+    margin-block-end: 2rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+    section {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
 

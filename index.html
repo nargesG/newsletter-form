@@ -6,6 +6,10 @@
     <title>Newsletter Form</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ea8f009169.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -15,10 +19,8 @@
         <form>
           <label for="firstname">First name</label>
           <div class="input">
-            <input id="firstname" type="text" />
-            <figure>
-              <img src="./icons/address-book.svg" alt="address-book" />
-            </figure>
+            <input id="firstname" type="text" autofocus />
+            <i class="fa-solid fa-address-book"></i>
           </div>
           <label for="lastname">Last name</label>
           <div class="input">
@@ -31,31 +33,27 @@
           <label for="password">Password</label>
           <div class="input">
             <input id="password" type="password" />
-            <figure>
-              <img src="./icons/lock-time.svg" alt="password" />
-            </figure>
+            <i class="fa-solid fa-key"></i>
           </div>
 
           <label for="confimpassword">Confim Password</label>
           <div class="input">
             <input id="confimpassword" type="password" />
-            <figure>
-              <img src="./icons/lock-time.svg" alt="password" />
-            </figure>
+            <i class="fa-solid fa-key"></i>
           </div>
 
           <button>SIGN UP</button>
         </form>
         <p>
           <span> My clicking the Sign Up button .You agree to our </span>
-          <a href="">Terms & Conditions</a>
+          <a href="./terms.html">Terms & Conditions</a>
           <span> and </span>
-          <a href="">Privacy Policy</a>
+          <a href="./privacy-policy.html">Privacy Policy</a>
         </p>
       </section>
       <p>
         <span> Already have an account? </span>
-        <a href="#">Login here</a>
+        <a href="./login.html">Login here</a>
       </p>
     </main>
   </body>
